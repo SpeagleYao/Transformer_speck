@@ -1,0 +1,12 @@
+
+class MultiHeadAttention(nn.Module):
+
+    def __init__(self, ...):
+
+        self.num_heads = num_heads
+        self.attention = DotProductAttention()
+        self.W_q = nn.linear(q_size, num_hiddeneds, bias = False)
+        self.W_k = nn.linear(k_size, num_hiddeneds, bias = False)
+        self.W_v = nn.linear(v_size, num_hiddeneds, bias = False)
+        self.W_o = nn.linear(num_hiddens, num_hiddeneds, bias = False)
+        
